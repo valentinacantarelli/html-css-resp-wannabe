@@ -83,35 +83,67 @@ img {
     width: 100vw;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: 0;
-    
+    margin-top: 0;  
   }
   .container{
-    background-color: lightsalmon;
-    
+    background-color: lightsalmon;  
   }
   #lezioni .row>.left,
   #lezioni .row>.right {
     width: 90%;
     margin-right: auto;
     margin-left: auto;
+    align-items: center;
     
   }
   #lezioni .row img {
     transform: scale(0.5);
     padding-bottom: 5px;
-    
-
   }
   h1{
     margin: auto;
     padding-top: 10px;
-    font-size: 25px;
-    
+    font-size: 25px;  
   }
   h3{
     margin-top: 10px;
   }
+  
+ .container.grey {
+  background-color: #fffd83;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+ }
+ #steps .row>.left,
+ #steps .row>.central,
+ #steps .row>.right {
+  float: left;
+  width: 90%
+ }
+ img {
+  transform: scale(0.7);
+ }
+ #why {
+   background-color: rgb(198, 209, 223);
+   display: flex;
+   
+ }
+ #why .row>.first,
+ #why .row>.second,
+ #why .row>.third {
+  width: 90%;
+  margin-top: 50px;
+  align-items: center;
+ }
+
+ #why .row img {
+  background-color: #577896;
+  border-radius: 50%;
+  padding: 30px
+  
+ }
+
 
 } 
   
