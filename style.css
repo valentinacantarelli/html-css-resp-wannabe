@@ -72,42 +72,46 @@ img {
   clear: both;
 }
 /*media query*/
-@media screen and (max-width:1000px){
-  body{
-    background: rgb(75,34,138);
-    background: linear-gradient(90deg, rgba(75,34,138,0.9220063025210083) 0%, rgba(253,29,29,0.7959558823529411) 50%, rgba(252,176,69,0.8799894957983193) 100%);
+@media screen and (max-width:420px){
+  *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .row{
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 0;
+    
+  }
+  .container{
+    background-color: lightsalmon;
+    
   }
   #lezioni .row>.left,
   #lezioni .row>.right {
-    transform: scale(0.6)
-    font-size: 14px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
-  }
-  #lezioni .row{
-    margin-top: 20px;
-  }
-  .row h3{
-    color: cornflowerblue;
-    text-shadow: 1px 1px 1px darkslategrey;
-
-  }
-
-  #lezioni .row img {
-    display: block;
+    width: 90%;
     margin-right: auto;
     margin-left: auto;
-    transform: scale(0.5);
-  }
     
-  .row>h1{
-    font-size: 25px;
-    color: cornflowerblue;
-    text-align: left; 
-    margin-left: 20px; 
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
+  #lezioni .row img {
+    transform: scale(0.5);
+    padding-bottom: 5px;
+    
+
+  }
+  h1{
+    margin: auto;
+    padding-top: 10px;
+    font-size: 25px;
+    
+  }
+  h3{
+    margin-top: 10px;
+  }
+
+} 
   
-
-
-}
