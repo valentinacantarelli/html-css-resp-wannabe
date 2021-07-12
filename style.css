@@ -1,0 +1,113 @@
+.row {
+  width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+/* BLOCCO LEZIONI */
+#lezioni .row>.left,
+#lezioni .row>.right {
+  width: 50%;
+  float: left;
+}
+
+#lezioni .row img {
+  /* per centrare orizzontalmente */
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#lezioni {
+  text-align: center;
+}
+
+/* BLOCCO STEPS */
+#steps .row>.left,
+#steps .row>.central,
+#steps .row>.right {
+  float: left;
+  width: 33%;
+}
+
+#steps {
+  text-align: center;
+}
+
+/* BLOCCO PERCHE */
+#why {
+  text-align: center;
+}
+
+#why .row>.first,
+#why .row>.second,
+#why .row>.third {
+  width: 100%;
+  margin-top: 80px;
+}
+
+#why .row img {
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px
+}
+
+/* COMMON */
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container.grey {
+  background-color: #f9f9f9;
+}
+
+img {
+  height: 200px;
+}
+
+.clear {
+  clear: both;
+}
+/*media query*/
+@media screen and (max-width:1000px){
+  body{
+    background: rgb(75,34,138);
+    background: linear-gradient(90deg, rgba(75,34,138,0.9220063025210083) 0%, rgba(253,29,29,0.7959558823529411) 50%, rgba(252,176,69,0.8799894957983193) 100%);
+  }
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    transform: scale(0.6)
+    font-size: 14px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+  }
+  #lezioni .row{
+    margin-top: 20px;
+  }
+  .row h3{
+    color: cornflowerblue;
+    text-shadow: 1px 1px 1px darkslategrey;
+
+  }
+
+  #lezioni .row img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    transform: scale(0.5);
+  }
+    
+  .row>h1{
+    font-size: 25px;
+    color: cornflowerblue;
+    text-align: left; 
+    margin-left: 20px; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+
+
+}
